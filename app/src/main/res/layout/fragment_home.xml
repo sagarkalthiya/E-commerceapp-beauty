@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center_vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="12">
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@color/colors"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:weightSum="12">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="2.7"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="2"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/skin_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/body_txt"
+                                    android:gravity="center"
+                                    android:rotation="270"
+                                    android:text="All Products"
+                                    android:textColor="#373131"
+                                    android:textSize="16sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/body_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_above="@+id/face_txt"
+                                    android:gravity="center"
+                                    android:rotation="270"
+                                    android:text="Body"
+                                    android:textColor="#005B1B"
+                                    android:textSize="16sp"
+                                    />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/face_txt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:rotation="270"
+                                    android:text="Makeup"
+                                    android:textColor="#373131"
+                                    android:textSize="16sp"
+                                    android:layout_above="@+id/hair_txt"
+                                    />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.5"
+                                android:orientation="horizontal">
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+                                    <TextView
+                                        android:id="@+id/hair_txt"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:gravity="center"
+                                        android:rotation="270"
+                                        android:text="Hair"
+                                        android:textColor="#373131"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.4"
+                                android:orientation="horizontal">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.4"
+                                android:weightSum="1">
+
+                                <ImageView
+                                    android:id="@+id/search_view"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:rotation="-90"
+                                    android:layout_marginStart="8dp"
+                                    android:layout_marginEnd="8dp"
+                                    app:srcCompat="@drawable/ic_filter" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"
+                    android:layout_weight="10"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical"
+                            android:weightSum="12">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.6"
+                                android:orientation="horizontal">
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1"
+                                android:padding="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal"
+                                >
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/sreachview_bg">
+
+                                    <SearchView
+                                        android:id="@+id/searchView"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:iconifiedByDefault="false"
+                                        android:queryHint="Search"
+                                        android:layout_marginBottom="5dp"
+                                        android:gravity="center"
+                                        android:searchIcon="@drawable/ic_search"
+                                        android:queryBackground="@android:color/transparent"/>
+
+                                </RelativeLayout>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="8"
+                                android:orientation="horizontal">
+
+                                <androidx.recyclerview.widget.RecyclerView
+                                    android:id="@+id/product_recycler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    tools:listitem="@layout/rv_product_item" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dip"
+                                android:layout_weight="1.4"
+                                android:gravity="center"
+                                android:weightSum="1">
+
+                                <RelativeLayout
+                                    android:id="@+id/badge4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/badge_layout1">
+
+                                    <RelativeLayout
+                                        android:id="@+id/relative_layout3"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <Button
+                                            android:id="@+id/cart_btn"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:background="@drawable/cart_button_bg"
+                                            android:drawableRight="@drawable/ic_cart"
+                                            android:paddingLeft="50dp"
+                                            android:paddingRight="50dp"
+                                            android:text="Your Cart is empty"
+                                            android:textAllCaps="false"
+                                            android:textColor="#FFFFFF"
+                                            />
+                                    </RelativeLayout>
+
+                                    <TextView
+                                        android:id="@+id/badge_count_txt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_alignRight="@id/relative_layout3"
+                                        android:background="@drawable/badeg_item"
+                                        android:text="99"
+                                        android:gravity="center"
+                                        android:textColor="#fff"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="24dp"
+        android:text="Pink"
+        android:textColor="@android:color/background_dark"
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/quote_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp"
+        android:text="Magnifying The Beauty That Already Exis's"
+        android:textColor="@android:color/background_dark"
+        android:textSize="12sp"
+        android:layout_below="@+id/app_name"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profileimg"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/user2"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"
+        android:foregroundGravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+</RelativeLayout>

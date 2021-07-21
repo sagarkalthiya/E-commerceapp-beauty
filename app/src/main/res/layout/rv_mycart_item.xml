@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bottomborder"
+        android:orientation="horizontal"
+        android:weightSum="12"
+        android:layout_alignParentLeft="true">
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="9">
+
+            <androidx.cardview.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_post_id"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:background="#fff"
+                android:layout_gravity="center"
+                card_view:cardCornerRadius="5dp"
+                card_view:cardElevation="8dp">
+
+                <ImageView
+                    android:id="@+id/basket_product_img"
+                    android:layout_width="80dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/login_bgimg" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom"
+                android:paddingBottom="5dp"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/basket_product_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="10dp"
+                        android:text="product_name_txt"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/basket_product_discription_txt"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/dummytext"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="right">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/basket_product_price_txt"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:text="RS 1200"
+                    android:textColor="@color/purple_500" />
+
+                <TextView
+                    android:id="@+id/highprice"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="old_price_txt"
+                    android:visibility="invisible"
+                    android:textColor="#777777"
+                    android:textSize="10dp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/removebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/edit_txt_bg"
+                android:src="@drawable/trash" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/profile_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="-100dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_profile_img"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/login1"
+            app:civ_border_color="#BCffffff"
+            app:civ_border_width="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="24dp"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:id="@+id/profile_name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="User Profile name"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="EmailID@gmail.com"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:weightSum="12">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="5"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="6.1"
+                android:padding="8dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="5dp"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <EditText
+                            android:id="@+id/et_fname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_user_icon"
+                            android:hint="  Enter Your User Name"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/purple_500"
+                            android:textColorHint="@color/purple_200"
+                            android:textSize="15dp"
+                            android:theme="@style/EditTextTheme_profile" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <EditText
+                            android:id="@+id/et_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_mobile_icon"
+                            android:hint="  Enter Your Mobile Number"
+                            android:inputType="number"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/purple_500"
+                            android:textColorHint="@color/purple_200"
+                            android:textSize="15dp"
+                            android:theme="@style/EditTextTheme_profile" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardBackgroundColor="@color/purple_500"
+                            app:cardElevation="5dp"
+                            app:cardCornerRadius="10dp">
+
+                            <TextView
+                                android:id="@+id/update_user_btn"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="  Update"
+                                android:textColor="@color/white"
+                                android:textSize="18dp" />
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp" />
+
+                        <EditText
+                            android:id="@+id/et_old_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_pass_lock"
+                            android:hint="  Enter Your Old Password"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/purple_500"
+                            android:textColorHint="@color/purple_200"
+                            android:textSize="15dp"
+                            android:theme="@style/EditTextTheme_profile" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+
+                        <EditText
+                            android:id="@+id/et_new_pass"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_pass_lock"
+                            android:hint="  Enter Your New Password"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/purple_500"
+                            android:textColorHint="@color/purple_200"
+                            android:textSize="15dp"
+                            android:theme="@style/EditTextTheme_profile" />
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="10dp" />
+
+                        <EditText
+                            android:id="@+id/et_new_pass_conform"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableStart="@drawable/ic_pass_lock"
+                            android:hint="  Enter Your Conform Password"
+                            android:inputType="text"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:textColor="@color/purple_500"
+                            android:textColorHint="@color/purple_200"
+                            android:textSize="15dp"
+                            android:theme="@style/EditTextTheme_profile" />
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="0.9"
+                android:padding="5dp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="@color/purple_500"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <TextView
+                        android:id="@+id/change_pass_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Change Password"
+                        android:textColor="@color/white"
+                        android:textSize="18dp" />
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
